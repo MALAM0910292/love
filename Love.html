@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Sabina 💖</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: pink;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+.heart {
+    position: fixed;
+    color: red;
+    animation: float 6s linear infinite;
+    font-size: 20px;
+}
+@keyframes float {
+    0% { transform: translateY(100vh); opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
+.container { padding: 40px 20px; }
+h1 { margin-bottom: 30px; }
+.question { margin: 25px 0; font-size: 18px; }
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: hotpink;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover { background-color: hotpink; color: white; }
+#result { margin-top: 30px; font-size: 20px; font-weight: bold; padding: 20px; }
+.page { display: none; }
+.page.active { display: block; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Special Questions for Sabina Dhamala 💕</h1>
+    <form id="quizForm">
+
+        <!-- Question 1 -->
+        <div class="page active">
+            <div class="question">
+                <p>1. What is Swornim's fav color?</p>
+                <input type="radio" name="q1" value="a"> A. Black<br>
+                <input type="radio" name="q1" value="b"> B. Black<br>
+                <input type="radio" name="q1" value="c"> C. Black<br>
+            </div>
+            <button type="button" onclick="nextPage(0)">Next 💖</button>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="page">
+            <div class="question">
+                <p>2. What does Swornim like?</p>
+                <input type="radio" name="q2" value="a"> A. Sabina<br>
+                <input type="radio" name="q2" value="b"> B. Sabina<br>
+                <input type="radio" name="q2" value="c"> C. Sabina<br>
+            </div>
+            <button type="button" onclick="nextPage(1)">Next 💖</button>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="page">
+            <div class="question">
+                <p>3. Do you miss him?</p>
+                <input type="radio" name="q3" value="a"> A. Yes<br>
+                <input type="radio" name="q3" value="b"> B. Yes<br>
+            </div>
+            <button type="button" onclick="nextPage(2)">Next 💖</button>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="page">
+            <div class="question">
+                <p>4. Do you like Swornim?</p>
+                <input type="radio" name="q4" value="a"> A. Yes<br>
+                <input type="radio" name="q4" value="b"> B. Yes<br>
+                <input type="radio" name="q4" value="c"> C. Yes<br>
+            </div>
+            <button type="button" onclick="nextPage(3)">Next 💖</button>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="page">
+            <div class="question">
+                <p>5. Who do you think is super charming?</p>
+                <input type="radio" name="q5" value="a"> A. Swornim<br>
+                <input type="radio" name="q5" value="b"> B. Swornim<br>
+                <input type="radio" name="q5" value="c"> C. Swornim<br>
+            </div>
+            <button type="button" onclick="nextPage(4)">Next 💖</button>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="page">
+            <div class="question">
+                <p>6. Who makes you laugh the most?</p>
+                <input type="radio" name="q6" value="a"> A. Swornim<br>
+                <input type="radio" name="q6" value="b"> B. Swornim<br>
+                <input type="radio" name="q6" value="c"> C. Swornim<br>
+            </div>
+            <button type="button" onclick="nextPage(5)">Next 💖</button>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="page">
+            <div class="question">
+                <p>7. Who would you want as a teammate in a game?</p>
+                <input type="radio" name="q7" value="a"> A. Swornim<br>
+                <input type="radio" name="q7" value="b"> B. Swornim<br>
+                <input type="radio" name="q7" value="c"> C. Swornim<br>
+            </div>
+            <button type="button" onclick="nextPage(6)">Next 💖</button>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="page">
+            <div class="question">
+                <p>8. Who is good at giving advice?</p>
+                <input type="radio" name="q8" value="a"> A. Swornim<br>
+                <input type="radio" name="q8" value="b"> B. Swornim<br>
+                <input type="radio" name="q8" value="c"> C. Swornim<br>
+            </div>
+            <button type="button" onclick="nextPage(7)">Next 💖</button>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="page">
+            <div class="question">
+                <p>9. Who is fun to hang out with?</p>
+                <input type="radio" name="q9" value="a"> A. Swornim<br>
+                <input type="radio" name="q9" value="b"> B. Swornim<br>
+                <input type="radio" name="q9" value="c"> C. Swornim<br>
+            </div>
+            <button type="button" onclick="nextPage(8)">Next 💖</button>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="page">
+            <div class="question">
+                <p>10. Who is always on your mind?</p>
+                <input type="radio" name="q10" value="a"> A. Swornim<br>
+                <input type="radio" name="q10" value="b"> B. Swornim<br>
+                <input type="radio" name="q10" value="c"> C. Swornim<br>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit 💖</button>
+        </div>
+
+    </form>
+    <div id="result"></div>
+</div>
+
+<script>
+// Floating hearts
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+}
+setInterval(createHeart, 500);
+
+// Pagination
+function nextPage(currentIndex) {
+    const pages = document.querySelectorAll('.page');
+    const selected = pages[currentIndex].querySelector('input[type="radio"]:checked');
+    if (!selected) {
+        alert("Please select an answer 💕");
+        return;
+    }
+    pages[currentIndex].classList.remove('active');
+    pages[currentIndex + 1].classList.add('active');
+}
+
+// Submit quiz
+function submitQuiz() {
+    const pages = document.querySelectorAll('.page');
+    for (let i = 0; i < pages.length; i++) {
+        const selected = pages[i].querySelector('input[type="radio"]:checked');
+        if (!selected) {
+            alert("Please answer all questions 💖");
+            return;
+        }
+    }
+    document.getElementById("result").innerHTML =
+        "Sabina, you are truly one of the most hardworking and beautiful souls I know. You give your best in everything you do, and that inspires me every single day. I feel so blessed and lucky to have you in my life. Your strength, your kindness, and your pure heart makes my world brighter. I’m always proud of you, and I cherish you more than words can ever explain. 💖";
+}
+</script>
+
+</body>
+</html>
